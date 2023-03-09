@@ -4,3 +4,39 @@
     box-sizing: border-box;
 }
 
+.debug{
+    border: 1px dotted red;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+}
+
+#top-area{
+    height: calc(100% - 90px);
+    display: flex;
+}
+
+#side-bar{
+    width: 80px;
+    height: 100%;
+    background-color: black;
+}
+
+#main{
+    width: calc(100% - 80px);
+    height: 100%;
+}
+
+/* mobile */
+@media only screen and (min-width: 480px ){
+    #side-bar{
+        width: 250px;
+    }
+    #main{
+        width: calc(100% - 250px);
+        height: 100%;
+    }
+}
