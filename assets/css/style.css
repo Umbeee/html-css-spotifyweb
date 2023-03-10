@@ -83,7 +83,7 @@ a{
 }
 
 .nav-top{
-    height: calc(100% - 50% - 50px);
+    height: calc(100% - 50% - 70px);
     width: 100%;
 }
 .nav-top ul{
@@ -138,13 +138,12 @@ a{
 
 
 .nav-bot{
-    height: 50px;
+    height: 70px;
     width: 100%;
     color: white;
 }
 
 .nav-bot div{
-    row-gap: 10px;
     display: flex;
     align-items: center; 
 }
@@ -152,12 +151,33 @@ a{
 .nav-bot div:first-child > img{
     height: 15px;
 }
+
+.nav-bot div:last-child {
+    margin-top: 5px;
+    border-top: 1px solid white;
+    padding-top: 5px;
+}
 /* .nav-bot div:last-child > div > img{
     height: 30px;
 } */
 #profile{
-    
+    background-color: grey;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: url("../img/profile.svg");
+    background-position: center;
+    background-size: contain;
 }
+
+.margin-right-10px{
+    margin-right: 10px;
+}
+
+
 
 
 .display-none{
