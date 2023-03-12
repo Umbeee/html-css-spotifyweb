@@ -30,17 +30,25 @@ a{
     width: 60px;
     height: 100%;
     background-color: black;
+    position: fixed;
+    
+    
 }
 
 #main{
     width: calc(100% - 60px);
-    height: 100%;
+    height: 300vh;
     background-color: rgb(20,25,34);
+    margin-left: 60px;
 }
 
 #bottom-area{
     background-color: rgb(40,40,40);
     height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #cta{
@@ -137,9 +145,6 @@ a{
 }
 
 
-
-
-
 .nav-bot{
     height: 70px;
     width: 100%;
@@ -186,11 +191,23 @@ a{
 }
 
 
-.container-main{
-    width: 100%; 
-    margin-right: auto; margin-left: auto;
-    margin-top: 80px;
+.margin-top-70{
+    margin-top: 70px;
 }
+
+.margin-top-30{
+    margin-top: 30px;
+}
+
+.container-main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.margin-top-50{
+    margin-top: 50px;
+}
+
 
 #menu{
     display: flex;
@@ -216,8 +233,45 @@ a{
 #menu > div:first-child{
         border-bottom: 1px solid greenyellow;
     }
-/* prossimo step da fare: trasformare questa sezione nei media query */
 
+.cards{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: calc(100% / 2 - 1%);
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card > h3{
+    color: white;
+}
+.container-main  span{
+    color: rgb(106,108,114);
+}
+.container-main  h2{ 
+    color: white;
+}
+
+
+.img-card{
+    display: block;
+    width: 100%;
+}
+
+.container-main > h2 {
+    font-size: 1.9em;
+}
 
 
 /* mobile */
@@ -228,7 +282,8 @@ a{
     }
     #main{
         width: calc(100% - 200px);
-        height: 100%;
+        height: 200vh;
+        margin-left: 200px;
     }
 
     #cta{
@@ -281,6 +336,17 @@ a{
         justify-content: center;
         flex-basis: calc(100% / 5 - 2%);
     }
+    .card{
+        
+        flex-basis: calc(100% / 4 - 1%);
+        
+    }
+    .cards{
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 1.3%;
+        
+    }
 }
 
 
@@ -291,5 +357,17 @@ a{
         align-items: center;
         justify-content: center;
         flex-basis: calc(100% / 6 - 2%);
+    }
+    .card{
+        
+        flex-basis: calc(100% / 6 - 1%);
+        
+    }
+    .cards{
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+        
     }
 }
