@@ -230,7 +230,7 @@ a{
     white-space: nowrap;
     font-size: 14px;
 }
-#menu > div:first-child{
+#menu > div:first-child > a{
         border-bottom: 1px solid greenyellow;
     }
 
@@ -264,6 +264,7 @@ a{
 }
 
 
+
 .img-card{
     display: block;
     width: 100%;
@@ -272,6 +273,108 @@ a{
 .container-main > h2 {
     font-size: 1.9em;
 }
+
+.card-artisti{
+    width: 100%;
+    aspect-ratio: 1;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.lana{
+    background-image: url("../img/youg.jpeg");
+}
+.einaudi{
+    background-image: url("../img/einaudi.jpeg");
+}
+
+
+/* barra bottom */
+#container-bot{
+    width: 98%;
+    height: 100%;
+    margin-left: auto; margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#container-bot img{
+    aspect-ratio: 1;
+    height: 70%;
+    display: block;
+}
+div#sx-bar{
+    flex-basis: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#comandi-dx{
+    flex-basis: 17%;
+}
+.center-bar{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.center-bar i{
+    color: white;
+    font-size: 1.5em;
+}
+.parte-sopra{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#barra-song{
+    flex-basis: 80%;
+    height: 5px;
+    background-color: rgb(106,108,114);
+    display: flex;
+    border-radius: 3px;
+}
+
+#barra-volume{
+    flex-basis: 60%;
+    height: 5px;
+    background-color: rgb(106,108,114);
+    display: flex;
+    border-radius: 3px;
+}
+
+.progressione{
+    flex-basis: 25%;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.parte-sotto{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-bot h4,
+#center-bar > .parte-sotto > span,
+#comandi-dx  i{
+    color: white;
+}
+#container-bot span,
+#sx-bar div i{ 
+    color: rgb(106,108,114);
+}
+#comandi-dx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 
 /* mobile */
@@ -282,7 +385,7 @@ a{
     }
     #main{
         width: calc(100% - 200px);
-        height: 200vh;
+        height: 300vh;
         margin-left: 200px;
     }
 
